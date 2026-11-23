@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none">
+  <!-- Dark Industrial Background for crisp contrast in light/dark tabs -->
+  <rect width="32" height="32" rx="4" fill="#0A0A09"/>
+  <rect x="0.5" y="0.5" width="31" height="31" rx="3.5" stroke="#232321"/>
+  
+  <!-- Top Workstation / Instrument Plate -->
+  <path d="M16 4.5L27 10L16 15.5L5 10L16 4.5Z" stroke="#F0C45A" stroke-width="2" stroke-linejoin="round"/>
+  
+  <!-- Central Resource Node (Active Lab Hub) -->
+  <circle cx="16" cy="10" r="2" fill="#F0C45A"/>
+  
+  <!-- Middle Resource Grid Layer -->
+  <path d="M5 16L16 21.5L27 16" stroke="#F0C45A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Base Infrastructure Layer -->
+  <path d="M5 22L16 27.5L27 22" stroke="#F0C45A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Vertical Interconnecting Spine (Grid Linkage) -->
+  <path d="M16 15.5V18.5" stroke="#F0C45A" stroke-width="2" stroke-linecap="round"/>
+  <path d="M16 21.5V24.5" stroke="#F0C45A" stroke-width="2" stroke-linecap="round"/>
+</svg>

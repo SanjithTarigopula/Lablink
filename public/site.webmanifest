@@ -1,0 +1,27 @@
+{
+  "name": "LabLink — Campus Lab Grid",
+  "short_name": "LabLink",
+  "description": "Centralized campus laboratory resource-sharing platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A09",
+  "theme_color": "#0A0A09",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "32x32",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.svg",
+      "sizes": "180x180",
+      "type": "image/svg+xml"
+    }
+  ]
+}

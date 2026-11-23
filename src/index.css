@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #0a0a09;
+  --color-bg-surface: #121311;
+  --color-bg-subtle: #181916;
+  --color-bg-elevated: #1d1e1a;
+  --color-border-main: #232321;
+  --color-border-subtle: #2d2e2a;
+
+  --color-text-primary: #faf8f9;
+  --color-text-secondary: #e5e5e4;
+  --color-text-muted: #8e8e8c;
+  --color-text-subtle: #676865;
+
+  --color-accent-gold: #f0c45a;
+  --color-accent-gold-hover: #f5cf6d;
+  --color-accent-gold-subtle: rgba(240, 196, 90, 0.12);
+  --color-accent-gold-border: rgba(240, 196, 90, 0.28);
+
+  --color-btn-primary-bg: #ece8df;
+  --color-btn-primary-text: #040404;
+  --color-btn-primary-hover: #f5f2ea;
+
+  --color-inverse-bg: #efedef;
+  --color-inverse-text: #040404;
+}
+
+@layer base {
+  *, ::before, ::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #0a0a09;
+    color: #faf8f9;
+  }
+
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #0a0a09;
+    color: #faf8f9;
+    font-family: 'Host Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  code, pre, kbd, samp {
+    font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  /* Dark industrial scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0a0a09;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #232321;
+    border-radius: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #363733;
+  }
+}

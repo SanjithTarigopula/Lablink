@@ -1,0 +1,146 @@
+import type { Project } from '../types';
+
+export const initialProjects: Project[] = [
+  {
+    id: 'proj-001',
+    title: 'Smart Campus Vision: Edge AI Surveillance & Anomaly Detection',
+    description:
+      'Designing and deploying a privacy-preserving low-latency multimodal edge vision system using Jetson units and centralized GPU workstations for automated campus perimeter monitoring.',
+    department: 'CSE',
+    studentId: 'stu-001',
+    studentName: 'Student Researcher',
+    deadline: '2026-12-15',
+    status: 'in-progress',
+    equipmentRequests: [
+      {
+        equipmentId: 'eq-009',
+        equipmentName: 'GPU Workstation (RTX 4090)',
+        justification: 'Required for batch gradient computation and quantization of YOLOv10 and ViT backbones.',
+        startDate: '2026-11-24',
+        endDate: '2026-12-05',
+        hoursPerDay: 4,
+      },
+      {
+        equipmentId: 'eq-003',
+        equipmentName: 'NVIDIA Jetson Nano',
+        justification: 'Edge node benchmark to quantify FPS and watt consumption per video stream.',
+        startDate: '2026-12-01',
+        endDate: '2026-12-10',
+        hoursPerDay: 3,
+      },
+    ],
+    createdAt: '2026-10-15T10:00:00Z',
+  },
+  {
+    id: 'proj-002',
+    title: 'Ultra-Low Power Sub-GHz Transceiver for Remote Agricultural Telemetry',
+    description:
+      'Custom RF transmitter board with integrated energy harvesting circuitry designed to communicate agricultural soil metrics over a 15km range without battery replacements.',
+    department: 'ECE',
+    studentId: 'stu-002',
+    studentName: 'Priya Iyer',
+    deadline: '2026-12-08',
+    status: 'in-progress',
+    equipmentRequests: [
+      {
+        equipmentId: 'eq-004',
+        equipmentName: 'Keysight DSOX1204G Oscilloscope',
+        justification: 'Measurement of switching transients, clock jitter and power-up sleep sequence currents in microampere ranges.',
+        startDate: '2026-11-24',
+        endDate: '2026-11-30',
+        hoursPerDay: 3,
+      },
+      {
+        equipmentId: 'eq-015',
+        equipmentName: 'Spectrum Analyzer (R&S)',
+        justification: 'Verifying harmonic suppression and spectral mask compliance in 868MHz ISM band.',
+        startDate: '2026-12-01',
+        endDate: '2026-12-05',
+        hoursPerDay: 2,
+      },
+    ],
+    createdAt: '2026-10-20T11:30:00Z',
+  },
+  {
+    id: 'proj-003',
+    title: 'Bionic Hand: Low-Cost Myoelectric Controlled Prosthesis',
+    description:
+      'Fabricating an anthropomorphic 5-finger prosthetic hand driven by linear micro-servos and EMG muscle signal classification, targeted at affordability for rural healthcare clinics.',
+    department: 'Mechanical',
+    studentId: 'stu-003',
+    studentName: 'Rohan Deshmukh',
+    deadline: '2026-11-30',
+    status: 'in-progress',
+    equipmentRequests: [
+      {
+        equipmentId: 'eq-005',
+        equipmentName: 'Creality Ender 3 V3 SE',
+        justification: 'Additive manufacturing of finger phalanges and flexible TPU tendon channels.',
+        startDate: '2026-11-25',
+        endDate: '2026-11-28',
+        hoursPerDay: 5,
+      },
+      {
+        equipmentId: 'eq-010',
+        equipmentName: 'UR5e Robotic Arm',
+        justification: 'Automated cyclic endurance and grasp load durability testing under repetitive cycles.',
+        startDate: '2026-11-27',
+        endDate: '2026-11-29',
+        hoursPerDay: 4,
+      },
+    ],
+    createdAt: '2026-10-10T14:15:00Z',
+  },
+  {
+    id: 'proj-004',
+    title: 'Biofuel Yield Optimization from Engineered Cyanobacterial Strains',
+    description:
+      'Quantitative microscopy and real-time gene expression analysis during nutrient starvation to maximize neutral lipid production for third-generation biodiesel synthesis.',
+    department: 'Biotechnology',
+    studentId: 'stu-004',
+    studentName: 'Ananya Reddy',
+    deadline: '2026-12-20',
+    status: 'approved',
+    equipmentRequests: [
+      {
+        equipmentId: 'eq-008',
+        equipmentName: 'Olympus BX53 Microscope',
+        justification: 'Fluorescence lipid-droplet visualization stained with Nile Red dyes across timed intervals.',
+        startDate: '2026-11-25',
+        endDate: '2026-12-10',
+        hoursPerDay: 3,
+      },
+      {
+        equipmentId: 'eq-013',
+        equipmentName: 'Bio-Rad PCR Thermal Cycler',
+        justification: 'Quantifying transcriptional upregulation of acetyl-CoA carboxylase genes.',
+        startDate: '2026-12-02',
+        endDate: '2026-12-08',
+        hoursPerDay: 4,
+      },
+    ],
+    createdAt: '2026-10-25T09:00:00Z',
+  },
+  {
+    id: 'proj-005',
+    title: 'High-Throughput Real-Time Radar Signal Processor on FPGA',
+    description:
+      'Hardware synthesis of pipelined FFT and CFAR (Constant False Alarm Rate) detection filters on FPGA fabric for unmanned aerial navigation collision avoidance.',
+    department: 'EEE',
+    studentId: 'stu-005',
+    studentName: 'Vikram Singh',
+    deadline: '2026-12-18',
+    status: 'submitted',
+    equipmentRequests: [
+      {
+        equipmentId: 'eq-006',
+        equipmentName: 'Xilinx Artix-7 FPGA Board',
+        justification: 'Hardware-in-the-loop timing verification and Vivado logic analyzer probing.',
+        startDate: '2026-11-26',
+        endDate: '2026-12-08',
+        hoursPerDay: 4,
+      },
+    ],
+    createdAt: '2026-11-05T16:45:00Z',
+  },
+];
